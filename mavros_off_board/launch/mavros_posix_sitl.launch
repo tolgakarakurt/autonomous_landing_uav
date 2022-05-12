@@ -12,6 +12,7 @@
     <!-- vehicle model and world -->
     <arg name="est" default="ekf2"/>
     <arg name="vehicle" default="quad_f450_camera"/>
+    <!-- <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/grass_pad.world"/> -->
     <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/grass_pad.world"/>
     <arg name="sdf" default="$(find mavlink_sitl_gazebo)/models/$(arg vehicle)/$(arg vehicle).sdf"/>
 
@@ -22,7 +23,7 @@
     <arg name="paused" default="false"/>
     <arg name="respawn_gazebo" default="false"/>
     <!-- MAVROS configs -->
-    <arg name="fcu_url" default="udp://:14540@localhost:14557"/>
+    <arg name="fcu_url" default="udp://:14550@localhost:14557"/>
     <arg name="respawn_mavros" default="false"/>
     <!-- PX4 configs -->
     <arg name="interactive" default="true"/>
